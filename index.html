@@ -11,7 +11,7 @@
 <body>
 <h1 id="fragment">Группа: ПИ23 <br>Курс: 2 <br>Оралов Кирилл</h1>
 <div class="link">
-    <ul class="list">
+    <ol class="list">
         <h2>Ссылки</h2><br><br>
         <!-- 1 -->
         <li><a href="https://www.kubsu.ru/index.php" target="_blank">Абсолютная гиперссылка на kubsu.ru</a></li>
@@ -57,7 +57,7 @@
 
         <!-- 15 -->
         <li>
-            <p><img src="images/circle.png" alt="circle_error" width="60" usemap="#map_circle"></p>
+            <p><img src="images/circle.png" alt="circle_error" width="100" usemap="#map_circle"></p>
 
             <p><map name="map_circle">
                 <area shape="circle" coords="20,52,52" href="https://www.kubsu.ru/" alt="map_circle">
@@ -97,37 +97,37 @@
         <!-- 21 -->
         <li><a href="ftp://user:12345@ftp.sponge.ru">Ссылка на FTP с авторизацией</a></li>
         <p class="explanation">Реализация в html: href="ftp://user:12345@ftp.sponge.ru"</p>
-    </ul>
+    </ol>
 </div>
 
 <br>
 <br>
 <div class="form_all">
 <h2>Форма</h2><br>
-<form action="/" method="post">
-    <label>ФИО: <input type="text"><br></label>
-    <label >Телефон: <input type="tel"><br></label>
-    <label>e-mail: <input type="email"><br></label>
+<form action="form-save.php" method="post">
+    <label>ФИО: <input type="text" name="name" required><br></label>
+    <label>Телефон: <input type="tel" name="phone" required><br></label>
+    <label>e-mail: <input type="email" required><br></label>
     <label>Дата рождения: <input type="date" name="forma_date" value="2025-09-12"><br></label>
 
     <p>Пол:</p>
-    <input type="radio" name="radio-group-1" value="male" />
+    <input type="radio" name="radio-group-1" value="male" required/>
     <label>Мужской</label><br>
-    <input type="radio" name="radio-group-1" value="female" />
+    <input type="radio" name="radio-group-1" value="female" required/>
     <label>Женский</label><br>
 
     <label><p>Любимые языки программирования:</p></label>
-    <select name="languages" multiple="multiple">
+    <select name="languages" multiple="multiple" required>
         <option value="cpp">C++</option>
         <option value="python">Python</option>
         <option value="java">Java</option>
     </select><br>
 
     <label><p>Биография:</p>
-        <textarea name="bio" rows="4">///</textarea><br><br>
+        <textarea name="bio" rows="4" required></textarea><br><br>
     </label>
 
-    <input type="checkbox" checked="checked" name="check-1">
+    <input type="checkbox" checked="checked" name="check-1" required>
     <label>С контрактом ознакомлен(а)</label><br><br>
 
     <button type="submit">Сохранить</button>
