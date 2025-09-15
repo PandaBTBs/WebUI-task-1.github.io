@@ -3,16 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <title>Page 1</title>
     <meta name="robots" content="noindex">
 </head>
 
 <body>
+<h1 id="fragment">Группа: ПИ23 <br>Курс: 2 <br>Оралов Кирилл</h1>
+<div class="link">
+    <ul class="list">
+        <h2>Ссылки</h2><br><br>
+        <!-- 1 -->
+        <li><a href="https://www.kubsu.ru/index.php" target="_blank">Абсолютная гиперссылка на kubsu.ru</a></li>
 
+        <!-- 2 -->
+        <li><a href="https://www.kubsu.ru/index.php" target="_blank">Абсолютная гиперссылка на kubsu.ru в протокое https</a></li>
+
+        <!-- 3 -->
+        <li><a href="http://www.kubsu.ru" target="_blank"><img src="images/kub.jpg" alt="kubsu.ru" width="100" class="href_img"></img></li>
+        
+        <!-- 4 -->
+        <li><a href="about=1/page2.html" target="_blank">Сокращенная ссылка на внутреннюю страницу</a></li>
+
+        <!-- 5 -->
+        <li><a href="index.html" target="_blank">Сокращенная ссылка на главную страницу</a></li>
+
+        <!-- 6 -->
+        <li><a href="#fragment" target="_blank">Ссылка на фрагмент текущей страницы</a></li>
+
+        <!-- 7 -->
+        <li><a href="https://auto.drom.ru/hyundai/all/?maxprice=1050000&maxyear=2025&fueltype=1" target="_blank">Ссылка с тремя параметрами </a></li>
+
+        <!-- 8 -->
+        <li><a href="https://www.kubsu.ru/ru/taxonomy/term/49?id=#zone-footer-wrapper" target="_blank">Ссылка с параметром id</a></li>
+
+        <!-- 9 -->
+        <li><a href="./index.html" target="_blank">Относительная ссылка на страницу в текущем каталоге</a></li>
+
+        <!-- 10 -->
+        <li><a href="./about=1/page2.html" target="_blank">Относительная ссылка на страницу в каталоге about </a></li>
+        
+        <!-- 11 -->
+        <li><a href="./about=1/page2.html" target="_blank">Относительная ссылка на страницу каталогом выше</a></li>
+
+        <!-- 12 -->
+        <li><a href="./about=1/about=2/page3.html" target="_blank">Относительная ссылка на страницу двумя каталогами выше</a></li>
+
+        <!-- 13 -->
+        <li><p class="contextual_text">На сайте <a href="https://www.kubsu.ru/" class="contextual_link" target="_blank">КубГУ</a> можно найти много полезной информации</p></li>
+
+        <!-- 14 -->
+        <li><a href="https://www.film.ru/#block-mpblocks-mpblocks-watch-now" target="_blank">Ссылка на фрагмент стороннего сайта</a></li>
+
+        <!-- 15 -->
+        <li>
+            <p><img src="images/circle.png" alt="circle_error" width="60" usemap="#map_circle"></p>
+
+            <p><map name="map_circle">
+                <area shape="circle" coords="20,52,52" href="https://www.kubsu.ru/" alt="map_circle">
+            </map></p>
+
+            <p><img src="images/rect.png" alt="rect_error" usemap="#map_rect" width="100" height="90"></p>
+            <p><map name="map_rect">
+                <area shape="rect" coords="0,0,200,100" href="https://www.kubsu.ru/" alt="map_rect">
+            </map></p>
+        </li>
+
+        <!-- 16 -->
+        <li><a href="">Ссылка с пустым href</a></li>
+
+        <!-- 17 -->
+        <li><a>Ссылка без href</a></li>
+
+        <!-- 18 -->
+        <li><a href="https://webref.ru/" rel="nofollow" target="_blank">Ссылка, запрещенная для переходов поисковикам</a></li>
+        <!-- 19 -->
+        <li>
+            <ul>
+                <li><a href="https://ya.ru/?utm_referrer=https%3A%2F%2Fwww.google.com%2F" target="_blank">1 вариант (robots.txt). Ссылка запрещенная для индексации поисковиками</a></li>
+                <li><a href="https://kubsu.ru/" rel="noindex" target="_blank">2 вариант (rel="noindex"). Ссылка запрещенная для индексации поисковиками</a></li>
+            </ul>
+        </li>
+        <p class="explanation">Реализация в html: <br>1 вариант (robots.txt): создать "robots.txt" с директивой Disallow и создать meta тег: -meta name="robots" content="noindex"- <br>2 вариант (rel="noindex"): -a href="https://ya.ru/?..." rel="noindex" - Ссылка запрещенная для индексации поисковиками -/a-</p>
+
+        <!-- 20 -->
+        <li><ol>
+            <li><a href="http://www.kubsu.ru " title="Надпись 1: Чтобы перейти на КубГУ нажмите" target="_blank">Надпись 1</a></li>
+            <li><a href="http://www.kubsu.ru" title="Надпись 2: Чтобы перейти на КубГУ нажмите" target="_blank">Надпись 2</a></li>
+            <li><a href="http://www.kubsu.ru" title="Надпись 3: Чтобы перейти на КубГУ нажмите" target="_blank">Надпись 3</a></li>
+        </ol></li>
+        <br>
+
+        <!-- 21 -->
+        <li><a href="ftp://user:12345@ftp.sponge.ru">Ссылка на FTP с авторизацией</a></li>
+        <p class="explanation">Реализация в html: href="ftp://user:12345@ftp.sponge.ru"</p>
+    </ul>
+</div>
+
+<br>
+<br>
 <div class="form_all">
+<h2>Форма</h2><br>
 <form action="/" method="post">
-    <h1 id="fragment">Группа: ПИ23 <br>Курс: 2 <br>Оралов Кирилл</h1>
     <label>ФИО: <input type="text"><br></label>
     <label >Телефон: <input type="tel"><br></label>
     <label>e-mail: <input type="email"><br></label>
@@ -40,115 +132,6 @@
 
     <button type="submit">Сохранить</button>
 </form>
-</div>
-<div class="link">
-    <ul class="list">
-        <h2>Ссылки</h2><br><br>
-        <!-- 1 -->
-        <li><a href="https://www.kubsu.ru/index.php" target="_blank">Абсолютная гиперссылка на kubsu.ru</a></li>
-        <p class="explanation">Реализация в html: "https://www.kubsu.ru/index.php"</p>
-
-        <!-- 2 -->
-        <li><a href="https://www.kubsu.ru/index.php" target="_blank">Абсолютная гиперссылка на kubsu.ru в протокое https</a></li>
-        <p class="explanation">Реализация в html: "https://www.kubsu.ru/index.php" </p>
-
-        <!-- 3 -->
-        <li><a href="http://www.kubsu.ru" target="_blank"><img src="images/kub.jpg" alt="kubsu.ru" width="100" class="href_img"></img></li>
-        <p class="explanation">Реализация в html: <br>a href="http://www.kubsu.ru"<br>img src="kub.jpg" alt="kubsu.ru" width="50" height="50"</p>
-        
-        <!-- 4 -->
-        <li><a href="about=1/page2.html" target="_blank">Сокращенная ссылка на внутреннюю страницу</a></li>
-        <p class="explanation">Реализация в html: href="catalog/SecondPage.html"</p>
-
-        <!-- 5 -->
-        <li><a href="index.html" target="_blank">Сокращенная ссылка на главную страницу</a></li>
-        
-        <p class="explanation">Реализация в html: href="index.html.html""</p>
-
-        <!-- 6 -->
-        <li><a href="#fragment" target="_blank">Ссылка на фрагмент текущей страницы</a></li>
-        <p class="explanation">Реализация в html: <br>href="#fragment" <br>h2 id="fragment"</p>
-
-        <!-- 7 -->
-        <li><a href="https://auto.drom.ru/hyundai/all/?maxprice=1050000&maxyear=2025&fueltype=1" target="_blank">Ссылка с тремя параметрами </a></li>
-        <p class="explanation">Реализация в html: https://auto.drom.ru/hyundai/all/?maxprice=1050000&maxyear=2025&fueltype=1 <br>1й параметр(ключ-значение):maxprice=1050000 <br>2й параметр:maxyear=2025 <br>3й параметр: fueltype=1  </p>
-
-        <!-- 8 -->
-        <li><a href="https://www.kubsu.ru/ru/taxonomy/term/49?id=#zone-footer-wrapper" target="_blank">Ссылка с параметром id</a></li>
-        <p class="explanation">Реализация в html (Пример): a href="page.html?id=123"</p>
-
-        <!-- 9 -->
-        <li><a href="./index.html" target="_blank">Относительная ссылка на страницу в текущем каталоге</a></li>
-        <p class="explanation">Реализация в html: a href="./index.html"</p>
-
-        <!-- 10 -->
-        <li><a href="./about=1/page2.html" target="_blank">Относительная ссылка на страницу в каталоге about </a></li>
-        <p class="explanation">Реализация в html: a href="/about/page.html"</p>
-        
-        <!-- 11 -->
-        <li><a href="./about=1/page2.html" target="_blank">Относительная ссылка на страницу каталогом выше</a></li>
-        <p class="explanation">Реализация в html: a href="../page.html"</p>
-
-        <!-- 12 -->
-        <li><a href="./about=1/about=2/page3.html" target="_blank">Относительная ссылка на страницу двумя каталогами выше</a></li>
-        <p class="explanation">Реализация в html: a href="../../page.html"</p>
-
-        <!-- 13 -->
-        <li><p class="contextual_text">На сайте <a href="https://www.kubsu.ru/" class="contextual_link" target="_blank">КубГУ</a> можно найти много полезной информации</p></li>
-        <p class="explanation">Реализация в html: -p- На сайте -a- href="https://www.kubsu.ru/" class="contextual_link">КубГУ -/a- можно найти много полезной информации -/p- </p>
-
-        <!-- 14 -->
-        <li><a href="https://www.film.ru/#block-mpblocks-mpblocks-watch-now" target="_blank">Ссылка на фрагмент стороннего сайта</a></li>
-        <p class="explanation">Реализация в html: a href="http://example.ru/page#fragment_id"</p>
-
-        <!-- 15 -->
-        <li>
-            <p class="explanation" target="_blank">Cсылки из прямоугольных и круглых областей картинки (HTML-тег map) <br>Реализация в html: </p>
-            <p><img src="images/circle.png" alt="circle_error" width="60" usemap="#map_circle"></p>
-
-            <p><map name="map_circle">
-                <area shape="circle" coords="20,52,52" href="https://www.kubsu.ru/" alt="map_circle">
-            </map></p>
-
-            <p><img src="images/rect.png" alt="rect_error" usemap="#map_rect" width="100" height="90"></p>
-            <p><map name="map_rect">
-                <area shape="rect" coords="0,0,200,100" href="https://www.kubsu.ru/" alt="map_rect">
-            </map></p>
-        </li>
-
-        <!-- 16 -->
-        <li><a href="">Ссылка с пустым href</a></li>
-        <p class="explanation">Реализация в html: href=""</p>
-
-        <!-- 17 -->
-        <li><a>Ссылка без href</a></li>
-        <p class="explanation">Реализация в html: -a- Ссылка -/a-</p>
-
-        <!-- 18 -->
-        <li><a href="https://webref.ru/" rel="nofollow" target="_blank">Ссылка, запрещенная для переходов поисковикам</a></li>
-        <p class="explanation">Реализация в html: a href="https://webref.ru/" rel="nofollow"</p>
-
-        <!-- 19 -->
-        <li>
-            <ul>
-                <li><a href="https://ya.ru/?utm_referrer=https%3A%2F%2Fwww.google.com%2F" target="_blank">1 вариант (robots.txt). Ссылка запрещенная для индексации поисковиками</a></li>
-                <li><a href="https://kubsu.ru/" rel="noindex" target="_blank">2 вариант (rel="noindex"). Ссылка запрещенная для индексации поисковиками</a></li>
-            </ul>
-        </li>
-        <p class="explanation">Реализация в html: <br>1 вариант (robots.txt): создать "robots.txt" с директивой Disallow и создать meta тег: -meta name="robots" content="noindex"- <br>2 вариант (rel="noindex"): -a href="https://ya.ru/?..." rel="noindex" - Ссылка запрещенная для индексации поисковиками -/a-</p>
-
-        <!-- 20 -->
-        <li><ol>
-            <li><a href="http://www.kubsu.ru " title="Надпись 1: Чтобы перейти на КубГУ нажмите" target="_blank">Надпись 1</a></li>
-            <li><a href="http://www.kubsu.ru" title="Надпись 2: Чтобы перейти на КубГУ нажмите" target="_blank">Надпись 2</a></li>
-            <li><a href="http://www.kubsu.ru" title="Надпись 3: Чтобы перейти на КубГУ нажмите" target="_blank">Надпись 3</a></li>
-        </ol></li>
-        <br>
-
-        <!-- 21 -->
-        <li><a href="ftp://user:12345@ftp.sponge.ru">Ссылка на FTP с авторизацией</a></li>
-        <p class="explanation">Реализация в html: href="ftp://user:12345@ftp.sponge.ru"</p>
-    </ul>
 </div>
 
 
